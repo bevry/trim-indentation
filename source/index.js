@@ -1,5 +1,10 @@
 'use strict'
 
+/**
+ * Trims the initial indentation from the input string
+ * @param {string} input
+ * @returns {string}
+ */
 function trimIndentation (input) {
 	const source = input.replace(/^\n+|\s+$/g, '')
 	const match = source.match(/^[\x20\t]+/)

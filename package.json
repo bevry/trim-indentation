@@ -1,5 +1,6 @@
 {
   "name": "trim-indentation",
+  "version": "1.0.0",
   "description": "Trim the initial indentation from a string",
   "homepage": "https://github.com/bevry/trim-indentation",
   "license": "MIT",
