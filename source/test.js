@@ -1,6 +1,6 @@
 'use strict'
 
-const joe = require('joe')
+const kava = require('kava')
 const { equal, errorEqual } = require('assert-helpers')
 const trimIndentation = require('./')
 
@@ -60,35 +60,25 @@ const failureCases = [
 	}
 ]
 
-joe.suite('trim-indentation', function (suite) {
-	suite('success cases', function (suite, test) {
-		successCases.forEach(function ({ name, args, output }) {
-			test(name, function () {
-				equal(
-					trimIndentation(...args),
-					output,
-					name
-				)
+kava.suite('trim-indentation', function(suite) {
+	suite('success cases', function(suite, test) {
+		successCases.forEach(function({ name, args, output }) {
+			test(name, function() {
+				equal(trimIndentation(...args), output, name)
 			})
 		})
 	})
 
-	suite('failure cases', function (suite, test) {
-		failureCases.forEach(function ({ name, args, output }) {
-			test(name, function () {
+	suite('failure cases', function(suite, test) {
+		failureCases.forEach(function({ name, args, output }) {
+			test(name, function() {
 				try {
 					trimIndentation(...args)
 					throw new Error('test should have failed but it did not')
-				}
-				catch (error) {
-					errorEqual(
-						error,
-						output,
-						name
-					)
+				} catch (error) {
+					errorEqual(error, output, name)
 				}
 			})
 		})
 	})
-
 })
