@@ -33,9 +33,15 @@ Trim the initial indentation from a string
 <!-- /DESCRIPTION -->
 
 
-- Use [trim-indentation](https://github.com/bevry/trim-indentation) to trim the initial indentation, useful for preparation for the other two
-- Use [detect-indentation](https://github.com/bevry/detect-indentation) to accurately detect the indentation that is used
-- Use [remove-indentation](https://github.com/bevry/remove-indentation) to accurately remove iterations of indentation
+-   Use [trim-indentation](https://github.com/bevry/trim-indentation) to trim the initial indentation, useful for preparation for the other two
+-   Use [detect-indentation](https://github.com/bevry/detect-indentation) to accurately detect the indentation that is used
+-   Use [remove-indentation](https://github.com/bevry/remove-indentation) to accurately remove iterations of indentation
+
+## Usage
+
+[Complete API Documentation.](http://master.trim-indentation.bevry.surge.sh/docs/index.html)
+
+[Tests.](https://github.com/bevry/trim-indentation/blob/master/source/test.js)
 
 <!-- INSTALL/ -->
 
@@ -44,14 +50,15 @@ Trim the initial indentation from a string
 <a href="https://npmjs.com" title="npm is a package manager for javascript"><h3>npm</h3></a>
 <ul>
 <li>Install: <code>npm install --save trim-indentation</code></li>
-<li>Require: <code>require('trim-indentation')</code></li>
+<li>Import: <code>import * as pkg from ('trim-indentation')</code></li>
+<li>Require: <code>const pkg = require('trim-indentation')</code></li>
 </ul>
 
 <a href="https://jspm.io" title="Native ES Modules CDN"><h3>jspm</h3></a>
 
 ``` html
 <script type="module">
-    import * as pkg from '//dev.jspm.io/trim-indentation'
+    import * as pkg from '//dev.jspm.io/trim-indentation@3.0.0'
 </script>
 ```
 
@@ -59,9 +66,9 @@ Trim the initial indentation from a string
 
 <p>This package is published with the following editions:</p>
 
-<ul><li><code>trim-indentation</code> aliases <code>trim-indentation/source/index.js</code></li>
-<li><code>trim-indentation/source/index.js</code> is esnext source code with require for modules</li>
-<li><code>trim-indentation/edition-browsers/index.js</code> is esnext compiled for browsers with require for modules</li></ul>
+<ul><li><code>trim-indentation</code> aliases <code>trim-indentation/index.js</code> which uses the <a href="https://github.com/bevry/editions" title="You can use the Editions Autoloader to autoload the appropriate edition for your consumers environment">Editions Autoloader</a> to automatically select the correct edition for the consumer's environment</li>
+<li><code>trim-indentation/source/index.js</code> is <a href="https://en.wikipedia.org/wiki/ECMAScript#ES.Next" title="ECMAScript Next">ESNext</a> source code for <a href="https://nodejs.org" title="Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine">Node.js</a> with <a href="https://nodejs.org/dist/latest-v5.x/docs/api/modules.html" title="Node/CJS Modules">Require</a> for modules</li>
+<li><code>trim-indentation/edition-browsers/index.js</code> is <a href="https://en.wikipedia.org/wiki/ECMAScript#ES.Next" title="ECMAScript Next">ESNext</a> compiled for web browsers with <a href="https://nodejs.org/dist/latest-v5.x/docs/api/modules.html" title="Node/CJS Modules">Require</a> for modules</li></ul>
 
 <h3><a href="https://www.typescriptlang.org/" title="TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. ">TypeScript</a></h3>
 
@@ -77,12 +84,6 @@ This project provides its type information via inline <a href="http://usejsdoc.o
 
 <!-- /INSTALL -->
 
-
-## Usage
-
-[Documentation.](http://master.trim-indentation.bevry.surge.sh/docs/)
-
-[Tests.](https://github.com/bevry/trim-indentation/blob/master/source/test.js)
 
 <!-- HISTORY/ -->
 
@@ -110,7 +111,7 @@ This project provides its type information via inline <a href="http://usejsdoc.o
 
 These amazing people are maintaining this project:
 
-<ul><li><a href="http://balupton.com">Benjamin Lupton</a> — <a href="https://github.com/bevry/trim-indentation/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/trim-indentation">view contributions</a></li></ul>
+<ul><li><a href="https://github.com/balupton">Benjamin Lupton</a> — <a href="https://github.com/bevry/trim-indentation/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/trim-indentation">view contributions</a></li></ul>
 
 <h3>Sponsors</h3>
 
@@ -130,8 +131,7 @@ No sponsors yet! Will you be the first?
 
 These amazing people have contributed code to this project:
 
-<ul><li><a href="http://balupton.com">Benjamin Lupton</a> — <a href="https://github.com/bevry/trim-indentation/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/trim-indentation">view contributions</a></li>
-<li><a href="http://github.com/apps/dependabot-preview">dependabot-preview[bot]</a> — <a href="https://github.com/bevry/trim-indentation/commits?author=dependabot-preview[bot]" title="View the GitHub contributions of dependabot-preview[bot] on repository bevry/trim-indentation">view contributions</a></li></ul>
+<ul><li><a href="https://github.com/balupton">Benjamin Lupton</a> — <a href="https://github.com/bevry/trim-indentation/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/trim-indentation">view contributions</a></li></ul>
 
 <a href="https://github.com/bevry/trim-indentation/blob/master/CONTRIBUTING.md#files">Discover how you can contribute by heading on over to the <code>CONTRIBUTING.md</code> file.</a>
 

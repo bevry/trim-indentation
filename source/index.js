@@ -12,7 +12,7 @@ function trimIndentation(input) {
 	const indentation = match[0]
 	const result = source
 		.split('\n')
-		.map(line => {
+		.map((line) => {
 			if (line.indexOf(indentation) === 0) {
 				return line.substring(indentation.length)
 			} else {
