@@ -1,8 +1,6 @@
-'use strict'
-
-const kava = require('kava')
+import kava from 'kava'
 const { equal, errorEqual } = require('assert-helpers')
-const trimIndentation = require('./')
+import trimIndentation from './index'
 
 const successCases = [
 	{
@@ -64,7 +62,8 @@ kava.suite('trim-indentation', function (suite) {
 	suite('success cases', function (suite, test) {
 		successCases.forEach(function ({ name, args, output }) {
 			test(name, function () {
-				equal(trimIndentation(...args), output, name)
+				/* Spread doesn't work so passing it as string, see: https://github.com/Microsoft/TypeScript/issues/4130#issuecomment-303486552 */
+				equal(trimIndentation(args[0]), output, name)
 			})
 		})
 	})
@@ -73,7 +72,7 @@ kava.suite('trim-indentation', function (suite) {
 		failureCases.forEach(function ({ name, args, output }) {
 			test(name, function () {
 				try {
-					trimIndentation(...args)
+					trimIndentation(args[0])
 					throw new Error('test should have failed but it did not')
 				} catch (error) {
 					errorEqual(error, output, name)
