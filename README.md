@@ -54,11 +54,17 @@ Trim the initial indentation from a string
 <li>Require: <code>const pkg = require('trim-indentation').default</code></li>
 </ul>
 
+<a href="https://deno.land" title="Deno is a secure runtime for JavaScript and TypeScript, it is an alternative for Node.js"><h3>Deno</h3></a>
+
+``` typescript
+import pkg from 'https://unpkg.com/trim-indentation@^4.1.0/edition-deno/index.ts'
+```
+
 <a href="https://www.pika.dev/cdn" title="100% Native ES Modules CDN"><h3>pika</h3></a>
 
 ``` html
 <script type="module">
-    import pkg from '//cdn.pika.dev/trim-indentation/^4.0.0'
+    import pkg from '//cdn.pika.dev/trim-indentation/^4.1.0'
 </script>
 ```
 
@@ -66,7 +72,7 @@ Trim the initial indentation from a string
 
 ``` html
 <script type="module">
-    import pkg from '//unpkg.com/trim-indentation@^4.0.0'
+    import pkg from '//unpkg.com/trim-indentation@^4.1.0'
 </script>
 ```
 
@@ -74,7 +80,7 @@ Trim the initial indentation from a string
 
 ``` html
 <script type="module">
-    import pkg from '//dev.jspm.io/trim-indentation@4.0.0'
+    import pkg from '//dev.jspm.io/trim-indentation@4.1.0'
 </script>
 ```
 
@@ -85,7 +91,8 @@ Trim the initial indentation from a string
 <ul><li><code>trim-indentation/source/index.ts</code> is <a href="https://www.typescriptlang.org/" title="TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. ">TypeScript</a> source code with <a href="https://babeljs.io/docs/learn-es2015/#modules" title="ECMAScript Modules">Import</a> for modules</li>
 <li><code>trim-indentation</code> aliases <code>trim-indentation/edition-esnext/index.js</code></li>
 <li><code>trim-indentation/edition-esnext/index.js</code> is <a href="https://www.typescriptlang.org/" title="TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. ">TypeScript</a> compiled against <a href="https://en.wikipedia.org/wiki/ECMAScript#ES.Next" title="ECMAScript Next">ESNext</a> for <a href="https://nodejs.org" title="Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine">Node.js</a> with <a href="https://nodejs.org/dist/latest-v5.x/docs/api/modules.html" title="Node/CJS Modules">Require</a> for modules</li>
-<li><code>trim-indentation/edition-browsers/index.js</code> is <a href="https://www.typescriptlang.org/" title="TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. ">TypeScript</a> compiled against <a href="https://en.wikipedia.org/wiki/ECMAScript#10th_Edition_-_ECMAScript_2019" title="ECMAScript ES2019">ES2019</a> for web browsers with <a href="https://babeljs.io/docs/learn-es2015/#modules" title="ECMAScript Modules">Import</a> for modules</li></ul>
+<li><code>trim-indentation/edition-browsers/index.js</code> is <a href="https://www.typescriptlang.org/" title="TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. ">TypeScript</a> compiled against <a href="https://en.wikipedia.org/wiki/ECMAScript#10th_Edition_-_ECMAScript_2019" title="ECMAScript ES2019">ES2019</a> for web browsers with <a href="https://babeljs.io/docs/learn-es2015/#modules" title="ECMAScript Modules">Import</a> for modules</li>
+<li><code>trim-indentation/edition-deno/index.ts</code> is <a href="https://www.typescriptlang.org/" title="TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. ">TypeScript</a> source code made to be compatible with <a href="https://deno.land" title="Deno is a secure runtime for JavaScript and TypeScript, it is an alternative to Node.js">Deno</a></li></ul>
 
 <!-- /INSTALL -->
 
@@ -136,7 +143,8 @@ No sponsors yet! Will you be the first?
 
 These amazing people have contributed code to this project:
 
-<ul><li><a href="https://balupton.com">Benjamin Lupton</a> — <a href="https://github.com/bevry/trim-indentation/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/trim-indentation">view contributions</a></li></ul>
+<ul><li><a href="https://balupton.com">Benjamin Lupton</a> — <a href="https://github.com/bevry/trim-indentation/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/trim-indentation">view contributions</a></li>
+<li><a href="https://github.com/sumitrai">Sumit Rai</a> — <a href="https://github.com/bevry/trim-indentation/commits?author=sumitrai" title="View the GitHub contributions of Sumit Rai on repository bevry/trim-indentation">view contributions</a></li></ul>
 
 <a href="https://github.com/bevry/trim-indentation/blob/master/CONTRIBUTING.md#files">Discover how you can contribute by heading on over to the <code>CONTRIBUTING.md</code> file.</a>
 
