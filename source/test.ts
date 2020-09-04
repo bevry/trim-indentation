@@ -1,5 +1,5 @@
 import kava from 'kava'
-const { equal, errorEqual } = require('assert-helpers')
+import { equal, errorEqual } from 'assert-helpers'
 import trimIndentation from './index.js'
 
 interface Test {
